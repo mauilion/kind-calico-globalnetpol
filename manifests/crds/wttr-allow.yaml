@@ -1,0 +1,12 @@
+apiVersion: crds.projectcalico.org/v1
+kind: GlobalNetworkPolicy
+metadata:
+  name: wttr-selective-allow
+spec:
+  selector: allow == "wttr-in"
+  types:
+  - Egress
+  egress:
+  - action: Allow
+    destination:
+      selector: role == 'wttr-in'

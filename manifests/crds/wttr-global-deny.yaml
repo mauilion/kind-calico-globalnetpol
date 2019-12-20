@@ -1,0 +1,13 @@
+apiVersion: crds.projectcalico.org/v1
+kind: GlobalNetworkPolicy
+metadata:
+  name: wttr-global-deny
+spec:
+  selector: all()
+  types:
+  - Egress
+  egress:
+  - action: Log
+  - action: Deny
+    destination:
+      selector: role == 'wttr-in'

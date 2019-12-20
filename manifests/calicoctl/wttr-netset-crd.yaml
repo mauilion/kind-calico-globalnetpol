@@ -1,0 +1,13 @@
+apiVersion: crd.projectcalico.org/v1
+kind: GlobalNetworkSet
+metadata:
+  annotations:
+    projectcalico.org/metadata: '{"uid":"4501c598-e2b8-419b-a77d-52c5be377577","creationTimestamp":"2019-12-20T21:43:08Z"}'
+  generation: 1
+  labels:
+    role: wttr
+  name: wttr-in
+  selfLink: /apis/crd.projectcalico.org/v1/globalnetworksets/wttr-in
+spec:
+  nets:
+  - 5.9.243.187/32

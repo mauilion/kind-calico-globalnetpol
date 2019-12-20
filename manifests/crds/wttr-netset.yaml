@@ -1,0 +1,9 @@
+apiVersion: crds.projectcalico.org/v1
+kind: GlobalNetworkSet
+metadata:
+  name: wttr-in
+  labels:
+    role: wttr
+spec:
+  nets:
+  - 5.9.243.187/32

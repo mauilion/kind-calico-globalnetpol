@@ -1,0 +1,9 @@
+apiVersion: crd.projectcalico.org/v1
+kind: GlobalNetworkSet
+metadata:
+  labels:
+    role: test
+  name: test-in
+spec:
+  nets:
+  - 10.0.0.1/32
