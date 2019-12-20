@@ -1,7 +1,7 @@
 A walkthrough of how to configure and validate globalnetworkpolicy and globalnetworksets with opensource calico
 
 The recording for this walkthrough can be found here:
-k8s.work/calico-glonbalnetpol.mp4
+[k8s.work/calico-globalnetpol.mp4](https://k8s.work/calico-globalnetpol.mp4)
 
 All manifests and resources used are here in the repo. 
 
